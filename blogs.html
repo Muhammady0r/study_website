@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/blogs/style.css" />
+    <link rel="stylesheet" href="./uikit/css/uikit.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blogs</title>
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="header">
+        <div class="container">
+          <a href="./index.html"
+            ><img src="./assets/imgs/Logo-white.svg" alt=""
+          /></a>
+
+          <div class="uk-margin">
+            <form class="uk-search uk-search-default">
+              <span class="uk-search-icon-flip" uk-search-icon></span>
+              <input
+                class="uk-search-input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+          <nav uk-dropnav="mode: click" class="dropnav">
+            <ul class="uk-subnav">
+              <li>
+                <a href>Category <span uk-drop-parent-icon></span></a>
+                <div class="uk-dropdown">
+                  <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="header_link">Become a Mentor</a>
+          <div class="log-in">
+            <button class="login">Login</button>
+            <button class="login">Sign Up</button>
+          </div>
+          <a href="./account.html" class="user hidden">
+            <img src="./assets/imgs/User2.svg" alt="" />
+            <p class="user-email">Romadhon@gmail.com</p>
+          </a>
+          <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="path">
+          <b><a href="./index.html">Home</a> > Blog</b>
+        </div>
+        <h1>Latest Blog</h1>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <div class="menu hidden overlay-ui">
+      <ul>
+        <li>Category</li>
+        <li><a href="">Item</a></li>
+        <li><a href="">Item</a></li>
+      </ul>
+      <a href="#">Become a Mentor</a>
+      <div class="log-in">
+        <button class="login">Login</button>
+        <button class="login">Sign Up</button>
+      </div>
+      <a href="./account.html" class="user hidden">
+        <img src="./assets/imgs/User2.svg" alt="" />
+        <p class="user-email">Romadhon@gmail.com</p>
+      </a>
+      <button class="log-out hidden">Log out</button>
+    </div>
+
+    <div class="login-menu hidden overlay-ui">
+      <h1>Log in</h1>
+      <input class="login-email" type="email" placeholder="E-mail" />
+      <input class="login-name" type="text" placeholder="Name" />
+      <input class="login-surname" type="text" placeholder="Surname" />
+      <p class="login-error hidden">Something is wrong</p>
+      <button class="login-btn">Submit</button>
+    </div>
+
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <img src="./assets/imgs/Image Placeholder6.png" alt="" />
+          <div class="text">
+            <h1>How to experience powerful education free of charge</h1>
+            <b
+              >3 May 2021
+              <i class="fa-solid fa-circle" style="color: #4586d6"></i> 5 min
+              read</b
+            >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              urna dolor quis enim, convallis vitae maecenas. Orci, erat enim
+              adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit
+              at. Urna, sit sit eget placerat eget hendrerit consequat. Risus,
+              cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet,
+              vel aliquam cursus aliquet pellentesque aenean. Sit vestibulum
+              malesuada eget pharetra. Risus consequat bibendum dictum placerat
+              convallis donec malesuada in porttitor. Sag
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/imgs/Image Placeholder6.png" alt="" />
+          <div class="text">
+            <h1>How to experience powerful education free of charge</h1>
+            <b
+              >3 May 2021
+              <i class="fa-solid fa-circle" style="color: #4586d6"></i> 5 min
+              read</b
+            >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              urna dolor quis enim, convallis vitae maecenas. Orci, erat enim
+              adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit
+              at. Urna, sit sit eget placerat eget hendrerit consequat. Risus,
+              cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet,
+              vel aliquam cursus aliquet pellentesque aenean. Sit vestibulum
+              malesuada eget pharetra. Risus consequat bibendum dictum placerat
+              convallis donec malesuada in porttitor. Sag
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/imgs/Image Placeholder6.png" alt="" />
+          <div class="text">
+            <h1>How to experience powerful education free of charge</h1>
+            <b
+              >3 May 2021
+              <i class="fa-solid fa-circle" style="color: #4586d6"></i> 5 min
+              read</b
+            >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              urna dolor quis enim, convallis vitae maecenas. Orci, erat enim
+              adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit
+              at. Urna, sit sit eget placerat eget hendrerit consequat. Risus,
+              cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet,
+              vel aliquam cursus aliquet pellentesque aenean. Sit vestibulum
+              malesuada eget pharetra. Risus consequat bibendum dictum placerat
+              convallis donec malesuada in porttitor. Sag
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/imgs/Image Placeholder6.png" alt="" />
+          <div class="text">
+            <h1>How to experience powerful education free of charge</h1>
+            <b
+              >3 May 2021
+              <i class="fa-solid fa-circle" style="color: #4586d6"></i> 5 min
+              read</b
+            >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              urna dolor quis enim, convallis vitae maecenas. Orci, erat enim
+              adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit
+              at. Urna, sit sit eget placerat eget hendrerit consequat. Risus,
+              cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet,
+              vel aliquam cursus aliquet pellentesque aenean. Sit vestibulum
+              malesuada eget pharetra. Risus consequat bibendum dictum placerat
+              convallis donec malesuada in porttitor. Sag
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pag">
+        <ul class="pag-ul">
+          <li>
+            <a href="#" class="pag-pre"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+          </li>
+          <li class="pag-li active"><span class="pag-b">1</span></li>
+          <li class="pag-li"><a href="#" class="pag-b">2</a></li>
+          <li class="pag-li"><a href="#" class="pag-b">3</a></li>
+          <li class="pag-li"><a href="#" class="pag-b">4</a></li>
+          <li class="pag-li"><a href="#" class="pag-b">5</a></li>
+          <li>
+            <a href="#" class="pag-next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <div class="top">
+          <div>
+            <img src="./assets/imgs/LogoFooter.svg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+              tristique placerat eleifend aliquam pellentesque facilisis
+              ultrices. Imperdiet mus urna egestas at tellus.
+            </p>
+          </div>
+          <ul>
+            <li>About</li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Mentor</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          <ul>
+            <li>Support</li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul>
+            <li>Company</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Code of Conduct</a></li>
+          </ul>
+        </div>
+        <div class="bot">
+          <p>
+            <a href="#">Privacy Policy</a> <a href="#">Terms and Condition</a>
+          </p>
+          <p>@2020 TanahAir Studio. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/menu-ui.js"></script>
+    <script src="./uikit/js/uikit.js"></script>
+  </body>
+</html>

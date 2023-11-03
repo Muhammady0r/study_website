@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/courses/style.css" />
+    <link rel="stylesheet" href="./uikit/css/uikit.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Courses</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="./index.html"><img src="./assets/imgs/Logo.svg" alt="" /></a>
+
+        <div class="uk-margin">
+          <form class="uk-search uk-search-default">
+            <span class="uk-search-icon-flip" uk-search-icon></span>
+            <input
+              class="uk-search-input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+        <nav uk-dropnav="mode: click" class="dropnav">
+          <ul class="uk-subnav">
+            <li>
+              <a href>Category <span uk-drop-parent-icon></span></a>
+              <div class="uk-dropdown">
+                <ul class="uk-nav uk-dropdown-nav">
+                  <li class="uk-active"><a href="#">Active</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header_link">Become a Mentor</a>
+        <div class="log-in">
+          <button class="login">Login</button>
+          <button class="login">Sign Up</button>
+        </div>
+        <a href="./account.html" class="user hidden">
+          <img src="./assets/imgs/User2.svg" alt="" />
+          <p class="user-email">Romadhon@gmail.com</p>
+        </a>
+        <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <div class="menu hidden overlay-ui">
+      <ul>
+        <li>Category</li>
+        <li><a href="">Item</a></li>
+        <li><a href="">Item</a></li>
+      </ul>
+      <a href="#">Become a Mentor</a>
+      <div class="log-in">
+        <button class="login">Login</button>
+        <button class="login">Sign Up</button>
+      </div>
+      <a href="./account.html" class="user hidden">
+        <img src="./assets/imgs/User2.svg" alt="" />
+        <p class="user-email">Romadhon@gmail.com</p>
+      </a>
+      <button class="log-out hidden">Log out</button>
+    </div>
+
+    <div class="login-menu hidden overlay-ui">
+      <h1>Log in</h1>
+      <input class="login-email" type="email" placeholder="E-mail" />
+      <input class="login-name" type="text" placeholder="Name" />
+      <input class="login-surname" type="text" placeholder="Surname" />
+      <p class="login-error hidden">Something is wrong</p>
+      <button class="login-btn">Submit</button>
+    </div>
+
+    <div class="container">
+      <div class="path">
+        <b><a href="./index.html">Home</a> > Programming Courses</b>
+      </div>
+
+      <h1 class="heading">Programming Courses</h1>
+      <p class="heading-p">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+        purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor
+        rhoncus
+      </p>
+
+      <h2 class="courses-heading">Most Popular Development Courses</h2>
+
+      <div uk-slider class="pop-courses">
+        <div class="uk-position-relative">
+          <div class="uk-slider-container uk-light">
+            <ul
+              class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@sm uk-child-width-1-3@s uk-child-width-1-4@m cards"
+            >
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">1</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">2</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">3</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">4</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">5</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">6</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">7</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">8</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">9</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">10</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+              <li class="card">
+                <img src="./assets/imgs/Image Placeholder.png" alt="" />
+                <b class="type">11</b>
+                <h3>Interpersonal skills - work better with others!</h3>
+                <p>Tanah Air Team</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                  </li>
+                  <li>(2078)</li>
+                </ul>
+                <b class="cost"><del>$640</del> $384</b>
+              </li>
+            </ul>
+          </div>
+
+          <div class="uk-hidden@m uk-light">
+            <a
+              class="uk-position-center-left uk-position-small"
+              href
+              uk-slidenav-previous
+              uk-slider-item="previous"
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small"
+              href
+              uk-slidenav-next
+              uk-slider-item="next"
+            ></a>
+          </div>
+
+          <div class="uk-visible@s arrows">
+            <a
+              class="uk-position-center-left-out uk-position-small"
+              href
+              uk-slidenav-previous
+              uk-slider-item="previous"
+            ></a>
+            <a
+              class="uk-position-center-right-out uk-position-small"
+              href
+              uk-slidenav-next
+              uk-slider-item="next"
+            ></a>
+          </div>
+        </div>
+
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+      </div>
+
+      <div class="topics">
+        <div class="top">
+          <h1>Programming Topics</h1>
+          <a href="./delail-courses.html">See All</a>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h2>Python</h2>
+          </div>
+          <div class="card">
+            <h2>Javascript</h2>
+          </div>
+          <div class="card">
+            <h2>CSS</h2>
+          </div>
+          <div class="card">
+            <h2>C#</h2>
+          </div>
+          <div class="card">
+            <h2>Web Development</h2>
+          </div>
+          <div class="card">
+            <h2>Data Science</h2>
+          </div>
+          <div class="card">
+            <h2>Java</h2>
+          </div>
+          <div class="card">
+            <h2>SQL</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="courses">
+        <div class="top">
+          <h1>All Courses</h1>
+          <div class="btns">
+            <label for="open-filter">
+              Filter
+              <div class="icon"></div>
+            </label>
+            <a href="#">Most Popular ></a>
+          </div>
+        </div>
+        <input type="checkbox" name="filter" id="open-filter" checked />
+        <div class="main">
+          <div class="filter">
+            <ul uk-accordion="multiple: true">
+              <li class="uk-open">
+                <a class="uk-accordion-title" href>Ratings</a>
+                <div class="uk-accordion-content">
+                  <label for="5">
+                    <input type="checkbox" id="5" />
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                    </ul>
+                    <p>5 <span>(1242)</span></p>
+                  </label>
+                  <label for="4">
+                    <input type="checkbox" id="4" />
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                    </ul>
+                    <p>4+ <span>(2145)</span></p>
+                  </label>
+                  <label for="3">
+                    <input type="checkbox" id="3" />
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                    </ul>
+                    <p>3+ <span>(224)</span></p>
+                  </label>
+                  <label for="2">
+                    <input type="checkbox" id="2" />
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                    </ul>
+                    <p>2+ <span>(2049)</span></p>
+                  </label>
+                  <label for="1">
+                    <input type="checkbox" id="1" />
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                      </li>
+                    </ul>
+                    <p>1+ <span>(2049)</span></p>
+                  </label>
+                </div>
+              </li>
+              <li class="uk-open">
+                <a class="uk-accordion-title" href>Durations</a>
+                <div class="uk-accordion-content">
+                  <label for="h1">
+                    <input type="checkbox" id="h1" />
+                    <p>1-3 Hours <span>(1242)</span></p>
+                  </label>
+                  <label for="h3">
+                    <input type="checkbox" id="h3" />
+                    <p>3-6 Hours <span>(2145)</span></p>
+                  </label>
+                  <label for="h6">
+                    <input type="checkbox" id="h6" />
+                    <p>6-12 Hours <span>(224)</span></p>
+                  </label>
+                  <label for="h13">
+                    <input type="checkbox" id="h13" />
+                    <p>13+ Hours <span>(2049)</span></p>
+                  </label>
+                </div>
+              </li>
+              <li class="uk-open">
+                <a class="uk-accordion-title" href>Categories</a>
+                <div class="uk-accordion-content">
+                  <label for="h1">
+                    <input type="checkbox" id="h1" />
+                    <p>Golang <span>(1242)</span></p>
+                  </label>
+                  <label for="h3">
+                    <input type="checkbox" id="h3" />
+                    <p>Java <span>(2145)</span></p>
+                  </label>
+                  <label for="h6">
+                    <input type="checkbox" id="h6" />
+                    <p>Flutter <span>(224)</span></p>
+                  </label>
+                  <label for="h13">
+                    <input type="checkbox" id="h13" />
+                    <p>CSS <span>(2049)</span></p>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href>Level</a>
+                <div class="uk-accordion-content">
+                  <label for="b">
+                    <input type="checkbox" id="b" />
+                    <p>Beginner <span>(1242)</span></p>
+                  </label>
+                  <label for="i">
+                    <input type="checkbox" id="i" />
+                    <p>Intermediate <span>(2145)</span></p>
+                  </label>
+                  <label for="e">
+                    <input type="checkbox" id="e" />
+                    <p>Expert <span>(224)</span></p>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href>Language</a>
+                <div class="uk-accordion-content">
+                  <label for="en">
+                    <input type="checkbox" id="en" />
+                    <p>English <span>(2049)</span></p>
+                  </label>
+                  <label for="es">
+                    <input type="checkbox" id="es" />
+                    <p>Espanol <span>(2049)</span></p>
+                  </label>
+                  <label for="ml">
+                    <input type="checkbox" id="ml" />
+                    <p>Melayu <span>(2049)</span></p>
+                  </label>
+                  <label for="bi">
+                    <input type="checkbox" id="bi" />
+                    <p>Bahasa Indonesia <span>(2049)</span></p>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href>Price</a>
+                <div class="uk-accordion-content price">
+                  <input type="number" placeholder="min" min="0" />
+                  <input type="number" placeholder="max" />
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href>Features</a>
+                <div class="uk-accordion-content">
+                  <label for="sth1">
+                    <input type="checkbox" id="sth1" />
+                    <p>Something <span>(1244)</span></p>
+                  </label>
+                  <label for="sth2">
+                    <input type="checkbox" id="sth2" />
+                    <p>Something <span>(3241)</span></p>
+                  </label>
+                  <label for="sth3">
+                    <input type="checkbox" id="sth3" />
+                    <p>Something <span>(312)</span></p>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+            <div class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star" style="color: #ffff00"></i>
+                </li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="top">
+          <div>
+            <img src="./assets/imgs/LogoFooter.svg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+              tristique placerat eleifend aliquam pellentesque facilisis
+              ultrices. Imperdiet mus urna egestas at tellus.
+            </p>
+          </div>
+          <ul>
+            <li>About</li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Mentor</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          <ul>
+            <li>Support</li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul>
+            <li>Company</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Code of Conduct</a></li>
+          </ul>
+        </div>
+        <div class="bot">
+          <p>
+            <a href="#">Privacy Policy</a> <a href="#">Terms and Condition</a>
+          </p>
+          <p>@2020 TanahAir Studio. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/menu-ui.js"></script>
+    <script src="./uikit/js/uikit.js"></script>
+  </body>
+</html>

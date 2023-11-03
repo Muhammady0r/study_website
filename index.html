@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./uikit/css/uikit.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="./index.html"><img src="./assets/imgs/Logo.svg" alt="" /></a>
+
+        <div class="uk-margin">
+          <form class="uk-search uk-search-default">
+            <span class="uk-search-icon-flip" uk-search-icon></span>
+            <input
+              class="uk-search-input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+        <nav uk-dropnav="mode: click" class="dropnav">
+          <ul class="uk-subnav">
+            <li>
+              <a href>Category <span uk-drop-parent-icon></span></a>
+              <div class="uk-dropdown">
+                <ul class="uk-nav uk-dropdown-nav">
+                  <li class="uk-active"><a href="#">Active</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header_link">Become a Mentor</a>
+        <div class="log-in">
+          <button class="login">Login</button>
+          <button class="login">Sign Up</button>
+        </div>
+        <a href="./account.html" class="user hidden">
+          <img src="./assets/imgs/User2.svg" alt="" />
+          <p class="user-email">Romadhon@gmail.com</p>
+        </a>
+        <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <div class="menu hidden overlay-ui">
+      <ul>
+        <li>Category</li>
+        <li><a href="">Item</a></li>
+        <li><a href="">Item</a></li>
+      </ul>
+      <a href="#">Become a Mentor</a>
+      <div class="log-in">
+        <button class="login">Login</button>
+        <button class="login">Sign Up</button>
+      </div>
+      <a href="./account.html" class="user hidden">
+        <img src="./assets/imgs/User2.svg" alt="" />
+        <p class="user-email">Romadhon@gmail.com</p>
+      </a>
+      <button class="log-out hidden">Log out</button>
+    </div>
+
+    <div class="login-menu hidden overlay-ui">
+      <h1>Log in</h1>
+      <input class="login-email" type="email" placeholder="E-mail" />
+      <input class="login-name" type="text" placeholder="Name" />
+      <input class="login-surname" type="text" placeholder="Surname" />
+      <p class="login-error hidden">Something is wrong</p>
+      <button class="login-btn">Submit</button>
+    </div>
+
+    <div class="showcase">
+      <div class="text">
+        <h1>Find the Best Courses and Amazing Mentor</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+          purus sit amet luctus venenatis, lectus magna fringilla urna,
+          porttitor rhoncus
+        </p>
+        <form>
+          <span uk-search-icon></span>
+          <input
+            type="text"
+            placeholder="Type in the course you want to learn"
+          />
+          <button>Search</button>
+        </form>
+        <ul>
+          <li>
+            <img src="./assets/imgs/access_alarm.svg" alt="" />Life Time Acces
+          </li>
+          <li><img src="./assets/imgs/user.svg" alt="" />Expert Mentor</li>
+          <li>
+            <img src="./assets/imgs/video_library.svg" alt="" />100K+ Courses
+          </li>
+        </ul>
+      </div>
+      <div class="img">
+        <div class="rate">
+          <h2>500+</h2>
+          <p>Total Review</p>
+          <ul>
+            <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+            <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+            <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+            <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+            <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="trending">
+      <div class="container">
+        <h1>Trending Courses</h1>
+
+        <div
+          uk-filter="target: .js-filter; animation: fade"
+          class="cards-filter"
+        >
+          <ul class="uk-subnav uk-subnav-pill">
+            <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+            <li uk-filter-control="[data-tag='Business']">
+              <a href="#">Business</a>
+            </li>
+            <li uk-filter-control="[data-tag='Design']">
+              <a href="#">Art & Design</a>
+            </li>
+            <li uk-filter-control="[data-tag='Development']">
+              <a href="#">Development</a>
+            </li>
+            <li uk-filter-control="[data-tag='Marketing']">
+              <a href="#">Marketing</a>
+            </li>
+          </ul>
+
+          <ul class="cards js-filter" uk-grid>
+            <li data-tag="Design" class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">UI/UX Design</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </li>
+            <li data-tag="Development" class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Web Developer</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </li>
+            <li data-tag="Business" class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">UX Research</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </li>
+            <li data-tag="Design" class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">3D Design</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </li>
+            <li data-tag="Marketing" class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">Public Speaking</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </li>
+            <li data-tag="Design" class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">UI/UX Design</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </li>
+            <li data-tag="Design" class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">3D Design</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </li>
+            <li data-tag="Design" class="card">
+              <img src="./assets/imgs/Image Placeholder.png" alt="" />
+              <b class="type">UI/UX Design</b>
+              <h3>Interpersonal skills - work better with others!</h3>
+              <p>Tanah Air Team</p>
+              <ul>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li><i class="fa-solid fa-star" style="color: #ffff00"></i></li>
+                <li>(2078)</li>
+              </ul>
+              <b class="cost"><del>$640</del> $384</b>
+            </li>
+          </ul>
+        </div>
+
+        <a href="./Courses.html">More Courses</a>
+      </div>
+    </div>
+
+    <div class="top-categ">
+      <div class="container">
+        <h1>Top Categories</h1>
+
+        <div class="cards">
+          <div class="card">
+            <b>Art & Design</b>
+          </div>
+          <div class="card">
+            <b>Business</b>
+          </div>
+          <div class="card">
+            <b>Copy Writing</b>
+          </div>
+          <div class="card">
+            <b>Marketing</b>
+          </div>
+          <div class="card">
+            <b>Programming</b>
+          </div>
+          <div class="card">
+            <b>Photography</b>
+          </div>
+          <div class="card">
+            <b>Videography</b>
+          </div>
+          <div class="card">
+            <b>Personal Development</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <img src="./assets/imgs/video_library_pink.svg" alt="" />
+            <h2>10.000+</h2>
+            <p>Courses</p>
+          </div>
+          <div class="card">
+            <img src="./assets/imgs/people.svg" alt="" />
+            <h2>50.000+</h2>
+            <p>Active Students</p>
+          </div>
+          <div class="card">
+            <img src="./assets/imgs/Container.svg" alt="" />
+            <h2>1000+</h2>
+            <p>Active Mentor</p>
+          </div>
+          <div class="card">
+            <img src="./assets/imgs/flag.svg" alt="" />
+            <h2>180</h2>
+            <p>Countries</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sth">
+      <img src="./assets/imgs/Accent.png" alt="" />
+    </div>
+
+    <div class="become">
+      <div class="container">
+        <img src="./assets/imgs/Image Placeholder2.png" alt="" />
+        <div class="text">
+          <h1>Become an Mentor</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu
+            in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a
+            turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non
+            id proin elit placerat. Lectus morbi amet et aliquam magna mauris.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu
+            in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a
+            turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non
+            id proin elit placerat. Lectus morbi amet et aliquam magna mauris.
+          </p>
+          <button>Start Teaching</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="about">
+        <button><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="card">
+          <div class="img">
+            <img src="./assets/imgs/Image Placeholder3.png" alt="" />
+            <img class="accent" src="./assets/imgs/Accent2.png" alt="" />
+          </div>
+          <div class="text">
+            <h2>
+              After studying here I gained new knowledge and insights. The
+              mentor was very friendly and guided me to get the knowledge I
+              wanted. Thank you!
+            </h2>
+            <b>KecekArif</b>
+            <p>Yang punya Surabaya nanti kapan - kapan tapi</p>
+          </div>
+        </div>
+        <button><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <div class="trust">
+        <h1>Trusted by Company</h1>
+        <div class="cards">
+          <a href=""><img src="./assets/imgs/Group1.svg" alt="" /></a>
+          <a href=""><img src="./assets/imgs/Group2.svg" alt="" /></a>
+          <a href=""><img src="./assets/imgs/Group3.svg" alt="" /></a>
+          <a href=""><img src="./assets/imgs/Group1.svg" alt="" /></a>
+        </div>
+        <div class="cards cards2">
+          <a href=""><img src="./assets/imgs/Group3.svg" alt="" /></a>
+          <a href=""><img src="./assets/imgs/Group2.svg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="blog">
+        <h1>The Latest Blog</h1>
+        <div class="cards">
+          <div class="card">
+            <img src="./assets/imgs/Image Placeholder4.png" alt="" />
+            <p><span>3, Mei 2021</span> <span>3 min read</span></p>
+            <h3>10 graphic design trends to get you inspired in 2021</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <a href="./blogs.html">Read More</a>
+          </div>
+          <div class="card">
+            <img src="./assets/imgs/Image Placeholder4.png" alt="" />
+            <p><span>3, Mei 2021</span> <span>3 min read</span></p>
+            <h3>10 graphic design trends to get you inspired in 2021</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <a href="./blogs.html">Read More</a>
+          </div>
+          <div class="card">
+            <img src="./assets/imgs/Image Placeholder4.png" alt="" />
+            <p><span>3, Mei 2021</span> <span>3 min read</span></p>
+            <h3>10 graphic design trends to get you inspired in 2021</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <a href="./blogs.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="top">
+          <div>
+            <img src="./assets/imgs/LogoFooter.svg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+              tristique placerat eleifend aliquam pellentesque facilisis
+              ultrices. Imperdiet mus urna egestas at tellus.
+            </p>
+          </div>
+          <ul>
+            <li>About</li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Mentor</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          <ul>
+            <li>Support</li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul>
+            <li>Company</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Code of Conduct</a></li>
+          </ul>
+        </div>
+        <div class="bot">
+          <p>
+            <a href="#">Privacy Policy</a> <a href="#">Terms and Condition</a>
+          </p>
+          <p>@2020 TanahAir Studio. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/menu-ui.js"></script>
+    <script src="./uikit/js/uikit.js"></script>
+  </body>
+</html>
