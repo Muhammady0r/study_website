@@ -537,6 +537,21 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+.showcase .img .bell {
+  position: absolute;
+  top: 47px;
+  left: 71px;
+}
+.showcase .img .verify {
+  position: absolute;
+  top: 292px;
+  right: 0;
+}
+.showcase .img .love {
+  position: absolute;
+  bottom: 226px;
+  left: 47px;
+}
 
 @media (max-width: 1190px) {
   .showcase {
